@@ -24,7 +24,7 @@ html,body{
 
 .box1 {
   grid-area: box1;
-  padding: 5% 25% 5% 25%;
+  padding: 5% 10% 5% 10%;
   text-align: center;
   justify-content: center;
   grid-template-rows: repeat(2, minmax(75px, auto0));
@@ -40,14 +40,14 @@ h1 {
   font-family: 'Abril Fatface', cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: clamp(30px, 5vw, 50px);
+  font-size: clamp(50px, 5vw, 50px);
   letter-spacing: 0.05em;
 }
 
 h4 {
   font-style: normal;
   font-weight: normal;
-  font-size: clamp(15px, 2vw, 20px);
+  font-size: clamp(20px, 2vw, 20px);
 }
 
 h6{
