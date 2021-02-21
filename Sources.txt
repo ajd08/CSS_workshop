@@ -1,1 +1,4 @@
 https://www.digitalocean.com/community/tutorials/css-scrollbars
+
+CLAMP CALCULATOR 
+https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/#for-those-who-dont-mind-that-edge-case

@@ -39,20 +39,20 @@ padding: 4% 10% 4% 10%;
     font-style: normal;
     font-weight: normal;
     font-size: 3rem;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(3rem, 2.5385rem + 2.0513vw, 5rem);
     letter-spacing: 0.05em;
   }
 
   h4 {
     font-style: normal;
     font-weight: normal;
-    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    font-size: clamp(1.5rem, 1.5000rem + 0.0000vw, 1.5rem);
   }
 
   h6{
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: clamp(0.7rem, 0.5846rem + 0.5128vw, 1.2rem);
   }
 
   .lemon_icons {
@@ -150,11 +150,12 @@ main:nth-of-type(2) {
   background-color: #F8F8F8;
 }
 
-@media only screen and (min-width: 1734px) {
+@media only screen and (max-width: 1024px) {
   body {
+  height: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(auto, 8);
+  grid-template-rows: 75% 50% 30% 40%;
   grid-template-areas:
     "header1"
     "header2"
@@ -164,5 +165,26 @@ main:nth-of-type(2) {
     "sectingre2"
     "mainsteps"
     "mainzoom";
+  }
+  .header_text {
+  padding: 2% 15% 2% 15%;
+  }
+  h1 {
+    font-size: clamp(6rem, 5.5385rem + 2.0513vw, 8rem);
+    letter-spacing: 0.05em;
+  }
+
+  h4 {
+    font-size: clamp(2.5rem, 2.5000rem + 0.0000vw, 2.5rem);
+  }
+
+  h6{
+    font-size: clamp(0.7rem, 0.5846rem + 0.5128vw, 1.2rem);
+  }
+
+  .lemon_icons {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
