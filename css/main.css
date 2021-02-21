@@ -14,7 +14,6 @@ html,body{
 
 body {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 100% 55% 80% 40%;
   grid-template-areas:
     "header1 header1 header2 header2"

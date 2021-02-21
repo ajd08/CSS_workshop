@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+$header-font: 'Abril Fatface', cursive;
+$background-color: #062018;
+$font-color: #F8F8F8;
+$scroll-bar-color: #16523f;
+
+html,body{
+  height: 100%;
+  max-width: 100%;
+  margin: 0%!important;
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100% 55% 80% 40%;
+  grid-template-areas:
+    "header1 header1 header2 header2"
+    "sectinfo sectinfo sectequip sectequip"
+    "sectingre1 sectingre1 sectingre2 sectingre2"
+    "mainsteps mainsteps mainzoom mainzoom";
+}
+
+header:nth-of-type(1) {
+  grid-area: header1;
+  background-color: $background-color;
+  text-align: center;
+  justify-content: center;
+}
+
+.header_text {
+padding: 4% 10% 4% 10%;
+}
+
+  h1 {
+    font-family: $header-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    font-size: clamp(3rem, 2.5385rem + 2.0513vw, 5rem);
+    letter-spacing: 0.05em;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: clamp(1.5rem, 1.5000rem + 0.0000vw, 1.5rem);
+  }
+
+  h6{
+    font-style: normal;
+    font-weight: normal;
+    font-size: clamp(0.7rem, 0.5846rem + 0.5128vw, 1.2rem);
+  }
+
+  .lemon_icons {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+header:nth-of-type(2) {
+  grid-area: header2;
+}
+
+header img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/*INFO*/
+section:nth-of-type(1) {
+  grid-area: sectinfo;
+  background-color: $background-color;
+  padding: 18% 0 0 15%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+/* EQUIPMENT*/
+section:nth-of-type(2) {
+  grid-area: sectequip;
+  background-color: $background-color;
+}
+
+.category {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  height: 50px;
+  padding: 10% 0 0 0;
+}
+
+.wrapper {
+  height: 240px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background: $background-color;        /* color of the tracking area */
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: $scroll-bar-color;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid $background-color;  /* creates padding around scroll thumb */
+}
+
+.wrapper .item {
+  min-width:170px;
+  height: 170px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ddd;
+  margin-right: 5px;
+}
+
+.item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/*INGREDIENTS*/
+section:nth-of-type(3) {
+  grid-area: sectingre1;
+  background-color: #062018;
+}
+
+section:nth-of-type(4) {
+  grid-area: sectingre2;
+  background-color: #062018;
+}
+
+main:nth-of-type(1) {
+  grid-area: mainsteps;
+  background-color: #062018;
+}
+
+main:nth-of-type(2) {
+  grid-area: mainzoom;
+  background-color: #F8F8F8;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75% 50% 30% 40%;
+  grid-template-areas:
+    "header1"
+    "header2"
+    "sectinfo"
+    "sectequip"
+    "sectingre1"
+    "sectingre2"
+    "mainsteps"
+    "mainzoom";
+  }
+  .header_text {
+  padding: 2% 15% 2% 15%;
+  }
+  h1 {
+    font-size: clamp(6rem, 5.5385rem + 2.0513vw, 8rem);
+    letter-spacing: 0.05em;
+  }
+
+  h4 {
+    font-size: clamp(2.5rem, 2.5000rem + 0.0000vw, 2.5rem);
+  }
+
+  h6{
+    font-size: clamp(0.7rem, 0.5846rem + 0.5128vw, 1.2rem);
+  }
+
+  .lemon_icons {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
