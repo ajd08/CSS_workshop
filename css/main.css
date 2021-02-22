@@ -436,6 +436,7 @@ main:nth-of-type(32) {
   position: relative;
   width: 100%;
   height: 30vh;
+
 }
 .iframe-container iframe{
   position: absolute;
@@ -443,9 +444,11 @@ main:nth-of-type(32) {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 8% 0;;
 }
 
 /*MEDIA QUERIES*/
+
 @media (max-width:600px){
   p {
   font-style: normal;
@@ -489,9 +492,64 @@ main:nth-of-type(32) {
   }
 }
 
-/*Notice that this pixel size is exactly one below the rule below. This rule says that once we get to
-smaller screen sizes (at which point our response columns will flow into a vertical layout), make our image
-only 40 percent of the browser height*/
+@media (max-width: 1024px) {
+
+  h1 {
+      font-size: 4em;
+    }
+
+  h4 {
+      font-size: 2em;
+      padding: 0 5% 0 5%;
+    }
+
+  h6{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.2em;
+    }
+
+  .lemon_icons {
+    width: 50%;
+  }
+
+  .ingredir, .steps p, .zoom p {
+    padding: 0 10%;
+  }
+
+  .categoryequipment, .categorynotes, .categorydirections {
+    padding: 2em 10% 1.5em 10%;
+  }
+
+  .categoryequipment, .categoryingre, .categorynotes, .categorydirections {
+    font-size: 3.3em;
+  }
+
+  h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+
+  p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  }
+
+  /*SCROLLBAR*/
+  .wrapper {
+    height: 75%;
+  }
+
+  .iframe-container iframe{
+  padding: 2% 0 8% 0;
+  }
+}
+
+
 @media (max-width:1083px){
 
   .hero-image{
@@ -510,42 +568,4 @@ html {
 .hero-image {
     height: 100vh;
 }
-  }
-/*@media only screen and (max-width: 1024px) {
-  body {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 75% 50% 30% 40%;
-  grid-template-areas:
-    "header1"
-    "header2"
-    "sectinfo"
-    "sectequip"
-    "sectingre1"
-    "sectingre2"
-    "mainsteps"
-    "mainzoom";
-  }
-  .header_text {
-  padding: 2% 15% 2% 15%;
-  }
-  h1 {
-    font-size: clamp(6rem, 5.5385rem + 2.0513vw, 8rem);
-    letter-spacing: 0.05em;
-  }
-
-  h4 {
-    font-size: clamp(2.5rem, 2.5000rem + 0.0000vw, 2.5rem);
-  }
-
-  h6{
-    font-size: clamp(0.7rem, 0.5846rem + 0.5128vw, 1.2rem);
-  }
-
-  .lemon_icons {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}*/
+}
