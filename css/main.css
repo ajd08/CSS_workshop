@@ -53,8 +53,7 @@ body {
     "mainsteps15"
     "mainzoom15"
     "mainsteps16"
-    "mainzoom16"
-    "sectphotos";
+    "mainzoom16";
 }
 
 header:nth-of-type(1) {
@@ -408,11 +407,6 @@ main:nth-of-type(31) {
 
 main:nth-of-type(32) {
   grid-area: mainzoom16;
-  background-color: #0d3629;
-}
-
-section:nth-of-type(4) {
-  grid-area: sectphotos;
   background-color: #062018;
 }
 
