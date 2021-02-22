@@ -51,7 +51,10 @@ body {
     "mainsteps14"
     "mainzoom14"
     "mainsteps15"
-    "mainzoom15";
+    "mainzoom15"
+    "mainsteps16"
+    "mainzoom16"
+    "sectphotos";
 }
 
 header:nth-of-type(1) {
@@ -68,7 +71,7 @@ h1 {
     font-family: 'Abril Fatface', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 0.05em;
   }
 
@@ -170,7 +173,7 @@ section:nth-of-type(2) {
 
 /*SCROLLBAR*/
 .wrapper {
-  height: 50%%;
+  height: 50%;
   display: flex;
   overflow-x: auto;
   margin: 0 1em;
@@ -217,6 +220,9 @@ font-size: 1.4em;
 line-height: 1.5em;
 }
 
+.yellow {
+  color: #ffe76e;
+}
 main:nth-of-type(1) {
   grid-area: mainsteps1;
   background-color: #062018;
@@ -268,105 +274,167 @@ main:nth-of-type(10) {
 }
 
 main:nth-of-type(11) {
-  grid-area: mainsteps4;
+  grid-area: mainsteps6;
   background-color: #062018;
 }
 
 main:nth-of-type(12) {
-  grid-area: mainzoom4;
+  grid-area: mainzoom6;
   background-color: #0d3629;
 }
 
 main:nth-of-type(13) {
-  grid-area: mainsteps5;
+  grid-area: mainsteps7;
   background-color: #062018;
 }
 
 main:nth-of-type(14) {
-  grid-area: mainzoom5;
+  grid-area: mainzoom7;
   background-color: #0d3629;
 }
 
 main:nth-of-type(15) {
-  grid-area: mainsteps5;
+  grid-area: mainsteps8;
   background-color: #062018;
 }
 
 main:nth-of-type(16) {
-  grid-area: mainzoom5;
+  grid-area: mainzoom8;
   background-color: #0d3629;
 }
 
 main:nth-of-type(17) {
-  grid-area: mainsteps4;
+  grid-area: mainsteps9;
   background-color: #062018;
 }
 
 main:nth-of-type(18) {
-  grid-area: mainzoom4;
+  grid-area: mainzoom9;
   background-color: #0d3629;
 }
 
 main:nth-of-type(19) {
-  grid-area: mainsteps5;
+  grid-area: mainsteps10;
   background-color: #062018;
 }
 
 main:nth-of-type(20) {
-  grid-area: mainzoom5;
+  grid-area: mainzoom10;
   background-color: #0d3629;
 }
 
 main:nth-of-type(21) {
-  grid-area: mainsteps5;
+  grid-area: mainsteps11;
   background-color: #062018;
 }
 
 main:nth-of-type(22) {
-  grid-area: mainzoom5;
+  grid-area: mainzoom11;
   background-color: #0d3629;
 }
 
 main:nth-of-type(23) {
-  grid-area: mainsteps4;
+  grid-area: mainsteps12;
   background-color: #062018;
 }
 
 main:nth-of-type(24) {
-  grid-area: mainzoom4;
+  grid-area: mainzoom12;
   background-color: #0d3629;
 }
 
 main:nth-of-type(25) {
-  grid-area: mainsteps5;
+  grid-area: mainsteps13;
   background-color: #062018;
 }
 
 main:nth-of-type(26) {
-  grid-area: mainzoom5;
+  grid-area: mainzoom13;
   background-color: #0d3629;
 }
 
 main:nth-of-type(27) {
-  grid-area: mainsteps5;
+  grid-area: mainsteps14;
   background-color: #062018;
 }
 
 main:nth-of-type(28) {
-  grid-area: mainzoom5;
+  grid-area: mainzoom14;
   background-color: #0d3629;
 }
 
 main:nth-of-type(29) {
-  grid-area: mainsteps5;
+  grid-area: mainsteps15;
   background-color: #062018;
 }
 
 main:nth-of-type(30) {
-  grid-area: mainzoom5;
+  grid-area: mainzoom15;
   background-color: #0d3629;
 }
 
+main:nth-of-type(31) {
+  grid-area: mainsteps16;
+  background-color: #062018;
+}
+
+main:nth-of-type(32) {
+  grid-area: mainzoom16;
+  background-color: #0d3629;
+}
+
+section:nth-of-type(4) {
+  grid-area: sectphotos;
+  background-color: #062018;
+}
+
+.photos img {
+  padding: 2% 23vw 0% 23vw;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width:600px){
+
+  .boxes {
+  display: block;
+  width: 100%;
+  text-align:center;
+  margin-right: 5vw;
+  }
+
+  .box {
+  width: 100%;
+  text-align:center;
+  }
+
+  .vertical-line{
+    display:none;
+  }
+
+}
+
+/*Notice that this pixel size is exactly one below the rule below. This rule says that once we get to
+smaller screen sizes (at which point our response columns will flow into a vertical layout), make our image
+only 40 percent of the browser height*/
+@media (max-width:1083px){
+
+  .hero-image{
+    height:40vh;
+  }
+  .right-panel {
+    min-height:100vh;
+
+  }
+}
+/*this is a media query for our large screen sizes. It's a rule specifically for any size of browser above 1084px*/
+@media (min-width:1084px) {
+html {
+  font-size: 1vw;
+}
+.hero-image {
+    height: 100vh;
+}
+  }
 /*@media only screen and (max-width: 1024px) {
   body {
   height: 100%;
