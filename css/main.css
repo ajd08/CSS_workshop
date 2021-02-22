@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 html,body{
-  height: 100%;
   max-width: 100%;
   margin: 0%!important;
   box-sizing: border-box;
+  overflow-x: hidden;
   background-color: #062018;
 
   color: #F8F8F8;
@@ -13,19 +13,18 @@ html,body{
 }
 
 body {
-  width: 100%;
   display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: (auto,8);
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-rows: (auto);
   grid-template-areas:
-    "header1 header1"
-    "header2 header2"
-    "sectinfo sectinfo"
-    "sectequip sectequip"
-    "sectingre1 sectingre1"
-    "sectingre2 sectingre2"
-    "mainsteps mainsteps"
-    "mainzoom mainzoom";
+    "header1"
+    "header2"
+    "sectinfo"
+    "sectequip"
+    "sectingre1"
+    "sectingre2"
+    "mainsteps"
+    "mainzoom";
 }
 
 header:nth-of-type(1) {
@@ -35,35 +34,39 @@ header:nth-of-type(1) {
 }
 
 .header_text {
-padding: 5%;
+padding: 2% 5% 2% 5%;
 }
 
-  h1 {
+h1 {
     font-family: 'Abril Fatface', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 6rem;
+    font-size: 4em;
     letter-spacing: 0.05em;
   }
 
-  h4 {
+h4 {
     font-style: normal;
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 1.3em;
+    padding: 0 5% 0 5%;
   }
 
-  h6{
+h6{
     font-style: normal;
     font-weight: normal;
-    font-size: 2.3rem;
+    font-size: 0.9em;
   }
 
-  .lemon_icons {
-    width: 30rem;
+.lemon_icons {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 40%;
+    padding: 2% 0% 2% 0%;
   }
 
+/*HEADER IMAGE*/
 header:nth-of-type(2) {
   grid-area: header2;
 }
@@ -76,32 +79,76 @@ header img {
 /*INFO*/
 section:nth-of-type(1) {
   grid-area: sectinfo;
-  background-color: #062018;
-  padding: 5%;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.8rem;
-  line-height: 4.5rem;
+}
+/* Subhead */
+h5.subhead {
+font-family: 'Poppins', bold;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+margin: .5em 0;
+}
+/* Body */
+p {
+font-style: normal;
+font-weight: normal;
+font-size: 1.4em;
+line-height: 1.5em;
+}
+
+.info-text {
+  margin-top:50px;
+}
+
+.boxes {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 1.4em 0 1.4em 1em;
+}
+
+.box {
+  width: 20%;
+  text-align:center;
+  margin-right: 1em;
+}
+
+.vertical-line {
+  border-right: 2px solid #16523f;
+  height:86px;
 }
 
 /* EQUIPMENT*/
 section:nth-of-type(2) {
   grid-area: sectequip;
-  background-color: #062018;
 }
 
+hr.horizontal {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #16523f;
+    margin: 1em 0;
+    padding: 0;
+    width: 100%;
+}
 .category {
   font-family: 'Abril Fatface', cursive;
   font-style: normal;
   letter-spacing: 0.05em;
-  font-size: 4.5rem;
-  padding: 10% 5% 10% 5%;
+  font-size: 2em;
+  padding: 0 0.5em;
 }
 
+/*SCROLLBAR*/
 .wrapper {
-  height: 40vh;
+  height: 50%%;
   display: flex;
   overflow-x: auto;
+  margin: 0 1em;
 }
 
 .wrapper::-webkit-scrollbar {
@@ -109,27 +156,27 @@ section:nth-of-type(2) {
 }
 
 .wrapper::-webkit-scrollbar-track {
-  background: #062018;        /* color of the tracking area */
+  background: #062018;      /* color of the tracking area */
 }
 
 .wrapper::-webkit-scrollbar-thumb {
-  background-color: #16523f;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #062018;  /* creates padding around scroll thumb */
+  background-color: #16523f;/* color of the scroll thumb */
+  border-radius: 20px;      /* roundness of the scroll thumb */
+  border: 3px solid #062018;/* creates padding around scroll thumb */
 }
 
 .wrapper .item {
-  min-width: 35vh;
-  height: 35vh;
-  line-height: 50px;
+  min-width: 20%;
+  height: 20%;
+  line-height: 1.2em;
   text-align: center;
-  background-color: #ddd;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .item img {
   object-fit: cover;
   width: 100%;
+  padding: 10% 0;
 }
 
 /*INGREDIENTS*/
