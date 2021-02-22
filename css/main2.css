@@ -78,7 +78,7 @@ h1 {
 h4 {
     font-style: normal;
     font-weight: normal;
-    font-size: 1.4em;
+    font-size: 1.3em;
     padding: 0 5% 0 5%;
   }
 
@@ -92,7 +92,7 @@ h6{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 40%;
     padding: 2% 0% 2% 0%;
   }
 
@@ -126,8 +126,8 @@ letter-spacing: 0.05em;
 p {
 font-style: normal;
 font-weight: normal;
-font-size: 1.4em;
-line-height: 1.7em;
+font-size: 1em;
+line-height: 1.5em;
 }
 
 .boxes {
@@ -167,8 +167,8 @@ section:nth-of-type(2) {
   font-family: 'Abril Fatface', cursive;
   font-style: normal;
   letter-spacing: 0.05em;
-  font-size: 2.5em;
-  padding: 2em 0.5em 1.5em 0.5em;
+  font-size: 2em;
+  padding: 2em 0.5em 0.5em 0.5em;
 }
 
 /*SCROLLBAR*/
@@ -176,6 +176,7 @@ section:nth-of-type(2) {
   height: 50%;
   display: flex;
   overflow-x: auto;
+  margin: 0 1em;
   border-bottom: 2px solid #0d3629;
 }
 
@@ -217,8 +218,16 @@ section:nth-of-type(3) {
   font-family: 'Abril Fatface', cursive;
   font-style: normal;
   letter-spacing: 0.05em;
-  font-size: 2.5em;
+  font-size: 2em;
   padding: 2em 0 1.5em 0.5em;
+}
+
+p {
+font-style: normal;
+font-weight: normal;
+font-size: 1.4em;
+line-height: 1.5em;
+padding: 0 0.8em;
 }
 
 h5 {
@@ -229,26 +238,18 @@ h5 {
   padding: 0 0.8em;
 }
 
-p {
-font-style: normal;
-font-weight: normal;
-font-size: 1.4em;
-line-height: 1.7em;
-padding: 0 0.8em;
-}
-
 /*DIRECTIONS*/
 
 .categorydirections {
   font-family: 'Abril Fatface', cursive;
   font-style: normal;
   letter-spacing: 0.05em;
-  font-size: 2.5em;
+  font-size: 2em;
   padding: 2em 0.5em 0.5em 0.5em;
   border-top: 2px solid #0d3629;
 }
 
-.yellow, .yellowi {
+.yellow {
   color: #ffe76e;
 }
 main:nth-of-type(1) {
@@ -416,26 +417,8 @@ section:nth-of-type(4) {
   background-color: #062018;
 }
 
-.categorynotes {
-  font-family: 'Abril Fatface', cursive;
-  font-style: normal;
-  letter-spacing: 0.05em;
-  font-size: 2.5em;
-  padding: 2em 0.5em 0.5em 0.5em;
-}
-
-.zoom {
-  border-radius: 20px;
-  padding: 2%;
-  width: 100vw;
-  height: auto;
-}
-
-.zoom img {
-  border-radius: 20px;
-  background: #062018;
-  object-fit: cover;
-  width: 100%;
+.photos img {
+  padding: 2% 23vw 0% 23vw;
 }
 
 /*MEDIA QUERIES*/
@@ -443,7 +426,7 @@ section:nth-of-type(4) {
   p {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.4em;
+  font-size: 1.1em;
   line-height: 1.7em;
   }
   /*INFO*/
@@ -479,6 +462,12 @@ section:nth-of-type(4) {
     line-height: 1em;
     text-align: center;
     margin-right: 10px;
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: 50%;
+    height: calc(100vh/2);
   }
 }
 
