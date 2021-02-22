@@ -117,7 +117,7 @@ hr.horizontal {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 2px solid #16523f;
+    border-top: 2px solid rgba(22, 82, 63, 1);
     margin: 1em 0;
     padding: 0;
     width: 100%;
