@@ -449,7 +449,7 @@ main:nth-of-type(32) {
 
 /*MEDIA QUERIES*/
 
-@media (max-width:600px){
+@media (max-width:600px) and (min-width:200px){
   p {
   font-style: normal;
   font-weight: normal;
@@ -492,7 +492,7 @@ main:nth-of-type(32) {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width:601px) {
 
   h1 {
       font-size: 4em;
@@ -507,7 +507,7 @@ main:nth-of-type(32) {
       font-style: normal;
       font-weight: normal;
       font-size: 1.2em;
-    }
+  }
 
   .lemon_icons {
     width: 50%;
@@ -544,23 +544,105 @@ main:nth-of-type(32) {
     height: 75%;
   }
 
+  /*VIDEO*/
+  .iframe-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+  }
   .iframe-container iframe{
-  padding: 2% 0 8% 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width:1083px) and (min-width:1025px){
+  body {
+  height:100vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header1 header1 header2 header2"
+    "sectinfo sectinfo sectinfo sectinfo"
+    "sectequip sectequip sectequip sectequip"
+    "sectingre sectingre sectingre sectingre"
+    "mainsteps1 mainsteps1 mainzoom1 mainzoom1"
+    "mainsteps2 mainsteps2 mainzoom2 mainzoom2"
+    "mainsteps3 mainsteps3 mainzoom3 mainzoom3"
+    "mainsteps4 mainsteps4 mainzoom4 mainzoom4"
+    "mainsteps5 mainsteps5 mainzoom5 mainzoom5"
+    "mainsteps6 mainsteps6 mainzoom6 mainzoom6"
+    "mainsteps7 mainsteps7 mainzoom7 mainzoom7"
+    "mainsteps8 mainsteps8 mainzoom8 mainzoom8"
+    "mainsteps9 mainsteps9 mainzoom9 mainzoom9"
+    "mainsteps10 mainsteps10 mainzoom10 mainzoom10"
+    "mainsteps11 mainsteps11 mainzoom11 mainzoom11"
+    "mainsteps12 mainsteps12 mainzoom12 mainzoom12"
+    "mainsteps13 mainsteps13 mainzoom13 mainzoom13"
+    "mainsteps14 mainsteps14 mainzoom14 mainzoom14"
+    "mainsteps15 mainsteps15 mainzoom15 mainzoom15"
+    "mainsteps16 mainsteps16 mainzoom16 mainzoom16";
+  }
+
+  .steps p, .zoom p {
+    padding: 0 20%;
+  }
+
+  .categoryequipment, .categorynotes, .categorydirections {
+    padding: 2em 20% 1.5em 20%;
+  }
+
+  .categoryequipment, .categoryingre, .categorynotes, .categorydirections {
+    font-size: 2.2em;
+  }
+
+  .categoryingre {
+    padding: 0em 0 1.8em 0;
+  }
+
+  .ingredir {
+    column-count: 2;
+    column-gap: 3%;
+    padding: 5%;
+  }
+
+  h5 {
+    font-size: 1em;
+    line-height: 1.8em;
+    padding: 0;
+  }
+
+  p {
+  font-size: 1em;
+  line-height: 1.8em;
+  padding: 0;
+  }
+
+  /*SCROLLBAR*/
+  .wrapper {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .wrapper, .item {
+    min-width: 50%;
+    height: 60%;
+  }
+
+  .iframe-container iframe{
+
   }
 }
 
 
-@media (max-width:1083px){
-
-  .hero-image{
-    height:40vh;
-  }
-  .right-panel {
-    min-height:100vh;
-
-  }
-}
 /*this is a media query for our large screen sizes. It's a rule specifically for any size of browser above 1084px*/
+/*
 @media (min-width:1084px) {
 html {
   font-size: 1vw;
@@ -569,3 +651,4 @@ html {
     height: 100vh;
 }
 }
+*/
