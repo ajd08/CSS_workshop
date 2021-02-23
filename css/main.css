@@ -482,7 +482,8 @@ main:nth-of-type(32) {
 .zoomimg {
   border-radius: 25px;
   object-fit: cover;
-  width: 100%;
+  min-width: 40%;
+  height: auto;
 }
 
 .zoomimg img {
