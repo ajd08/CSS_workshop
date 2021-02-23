@@ -105,7 +105,8 @@ body {
     "mainsteps15"
     "mainzoom15"
     "mainsteps16"
-    "mainzoom16";
+    "mainzoom16"
+    "mainfooter17";
 }
 
 /*HEADER*/
@@ -509,6 +510,11 @@ main:nth-of-type(32) {
   padding: 0;
 }
 
+main:nth-of-type(33) {
+  grid-area: mainfooter17;
+  background-color: #062018;
+}
+
 /*MEDIA QUERIES*/
 
 @media (max-width:1024px) and (min-width:200px) {
@@ -750,7 +756,6 @@ main:nth-of-type(32) {
   }
 }
 
-
 @media (max-width: 1024px) and (min-width:601px) {
 
   h1 {
@@ -837,7 +842,8 @@ main:nth-of-type(32) {
     "mainsteps13 mainsteps13 mainzoom13 mainzoom13"
     "mainsteps14 mainsteps14 mainzoom14 mainzoom14"
     "mainsteps15 mainsteps15 mainzoom15 mainzoom15"
-    "mainsteps16 mainsteps16 mainzoom16 mainzoom16";
+    "mainsteps16 mainsteps16 mainzoom16 mainzoom16"
+    "mainfooter17 mainfooter17 mainfooter17 mainfooter17";
   }
   .header_text {
     padding: 20% 0;
