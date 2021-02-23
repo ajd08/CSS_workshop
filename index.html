@@ -7,6 +7,15 @@
   <title>BBQ Cauliflower Pizza</title>
 </head>
 <body>
+  <ul class="menu">
+    <li><a href="index.html" title="Home" class="external-link">Home</a></li>
+    <li><a href="#info">Info</a></li>
+    <li><a href="#equipment">Equipment</a></li>
+    <li><a href="#ingredients">Ingredients</a></li>
+    <li><a href="#directions">Directions</a></li>
+    <li><a href="#notes">Notes</a></li>
+    <li><a href="#notes">Video</a></li>
+  </ul>
   <header>
     <div class="header_text">
       <h1>BBQ Cauliflower Pizza</h1>
@@ -14,7 +23,7 @@
       <div class="lemon_icons">
         <img src="img/lemon-slice-full.svg" alt="rating icons">
       </div>
-      <h6>BY PICK UP LIMES <br> June 26, 2020</h6>
+      <h6 id="info">BY PICK UP LIMES <br> June 26, 2020</h6>
     </div>
   </header>
   <header>
@@ -71,8 +80,10 @@
           </p>
         </div>
     </div>
-    <hr class="horizontal"/>
+    <hr class="horizontal" id="equipment"/>
   </section>
+
+<!--EQUIPMENT-->
     <section>
       <div class="categoryequipment">Equipment</div>
       <div class="wrapper">
@@ -85,7 +96,7 @@
         <div class="item"><img src="img/smallbowl.jpg">
         <p>Small bowl</p></div>
         <div class="item"><img src="img/rollingpin.jpg">
-        <p>Rolling pin<br></p></div>
+        <p id="ingredients">Rolling pin<br></p></div>
       </div>
     </section>
 
@@ -130,12 +141,13 @@
         <span class="yellow">· 2 cloves</span> garlic, crushed<br>
         <span class="yellow">· 1/4 tsp</span> salt<br><br>
       </p>
-      <h5>
+      <h5 id="directions">
         Garnish
       </h5>
       <p>
         <span class="yellow">· 1 stalk</span> scallions, thinly sliced
       </p>
+      <hr class="horizontal"/>
     </section>
 
 <!--STEPS-->
@@ -146,8 +158,6 @@
       </p>
     </main>
     <main class="zoom">
-      <p>
-      </p>
     </main>
     <main class="steps">
       <p>
@@ -292,7 +302,7 @@
       <img src="img/BBQ_pizza4.jpg">
     </main>
     <main class="steps">
-      <div class="categorynotes">Notes</div>
+      <div class="categorynotes" id="notes">Notes</div>
       <p>
         1. Self-rising flour is regular all-purpose flour, but with baking powder, and sometimes salt, added to it. You can find self-rising flour at most grocery stores, in the same place you might find regular flour.<br><br>
         2. <b>Variations:</b> try different kinds of flavours of hummus for the pizza sauce. We used spicy hummus, but you could also try other flavours that are available to you.<br><br>
@@ -305,5 +315,8 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/VH3VFi9C4Z0?start=272" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </main>
+    <footer>
+      <div style="width:500px;height:100px;border:1px solid #062018;">This is a rectangle!</div>
+    </footer>
 </body>
 </html>
