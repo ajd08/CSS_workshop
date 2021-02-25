@@ -515,6 +515,30 @@ main:nth-of-type(33) {
   grid-area: mainfooter17;
   background-color: #062018;
 }
+.categorysources {
+  font-family: 'Abril Fatface', cursive;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  font-size: 2.5em;
+  padding: 2em 10% 1.5em 10%;
+  border-top: 2px solid #0d3629;
+}
+
+.sources {
+  padding: 0 10%;
+}
+
+a:link {
+  color: #F8F8F8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9dc2a7;
+  background-color: transparent;
+  text-decoration: none;
+}
 
 /*MEDIA QUERIES*/
 
@@ -735,6 +759,30 @@ main:nth-of-type(33) {
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1.7em;
+  }
+
+  .categorysources {
+    font-family: 'Abril Fatface', cursive;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    font-size: 2em;
+    padding: 2em 0% 1.5em 0%;
+  }
+
+  .sources {
+    padding: 0%;
+  }
+
+  a:link {
+    color: #F8F8F8;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #9dc2a7;
+    background-color: transparent;
+    text-decoration: none;
   }
 
   .categoryequipment, .categoryingre, .categorynotes, .categorydirections {
