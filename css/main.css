@@ -708,12 +708,39 @@ main:nth-of-type(33) {
 
 @media (max-width:600px) and (min-width:200px){
 
+  h1 {
+    font-size: 3em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    padding: 0 5% 0 5%;
+  }
+
+  h6{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+  }
+
+  h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.7em;
+  }
+
   p {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.7em;
   }
+
+  .categoryequipment, .categoryingre, .categorynotes, .categorydirections {
+    font-size: 2em;
+  }
+
   /*INFO*/
   .boxes {
   display: block;
@@ -764,14 +791,14 @@ main:nth-of-type(33) {
     }
 
   h4 {
-      font-size: 2em;
+      font-size: 1.5em;
       padding: 0 5% 0 5%;
     }
 
   h6{
       font-style: normal;
       font-weight: normal;
-      font-size: 1.2em;
+      font-size: 0.8em;
   }
 
   .lemon_icons {
@@ -782,26 +809,36 @@ main:nth-of-type(33) {
     padding: 0 20%;
   }
 
-  .categoryequipment, .categorynotes, .categorydirections {
-    padding: 2em 10% 1.5em 10%;
+  .categoryequipment {
+    padding: 2em 20% 1.5em 20%;
   }
 
   .categoryequipment, .categoryingre, .categorynotes, .categorydirections {
-    font-size: 3.3em;
+    font-size: 3em;
+  }
+
+  .categoryingre, .categorydirections, .categorynotes {
+    padding: 2em 20%;
   }
 
   h5 {
     font-style: normal;
     font-weight: bold;
-    font-size: 1.8em;
-    line-height: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    padding: 0 20%;
   }
 
   p {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.8em;
-  line-height: 1.8em;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  padding: 0 20%;
+  }
+
+  .zoom p {
+    padding: 0 19%;
   }
 
   /*SCROLLBAR*/
