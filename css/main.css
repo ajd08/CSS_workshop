@@ -535,13 +535,13 @@ main:nth-of-type(33) {
   padding: 0 10%;
 }
 
-a:link {
+main a:link {
   color: #F8F8F8;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:visited {
+main a:visited {
   color: #9dc2a7;
   background-color: transparent;
   text-decoration: none;
