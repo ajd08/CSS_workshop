@@ -831,7 +831,7 @@ main a:visited {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: none;
   }
 }
 
@@ -906,6 +906,7 @@ main a:visited {
     position: relative;
     max-width: 100vw;
     height: 60vh;
+    padding: none;
   }
 
   .iframe-container iframe{
@@ -914,7 +915,7 @@ main a:visited {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: none;
   }
 }
 
