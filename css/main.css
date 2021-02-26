@@ -262,6 +262,7 @@ section:nth-of-type(2) {
 section:nth-of-type(3) {
   grid-area: sectingre;
   background-color: #062018;
+  border-top: 2px solid #0d3629;
 }
 
 .categoryingre {
@@ -455,16 +456,21 @@ main:nth-of-type(30) {
 main:nth-of-type(31) {
   grid-area: mainsteps16;
   background-color: #062018;
+  border-top: 2px solid #0d3629;
 }
 
 main:nth-of-type(32) {
   grid-area: mainzoom16;
   background-color: #062018;
+  border-top: 2px solid #0d3629;
+  min-width: 100%;
+  border-radius: 0px;
 }
 
 main:nth-of-type(33) {
   grid-area: mainsources17;
   background-color: #062018;
+  border-top: 2px solid #0d3629;
 }
 
 .categorynotes {
@@ -512,7 +518,7 @@ main:nth-of-type(33) {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
   padding: 0;
 }
@@ -528,7 +534,6 @@ main:nth-of-type(33) {
   letter-spacing: 0.05em;
   font-size: 2.5em;
   padding: 2em 10% 1.5em 10%;
-  border-top: 2px solid #0d3629;
 }
 
 .sources {
@@ -816,8 +821,17 @@ main a:visited {
   /*VIDEO*/
   .iframe-container{
     position: relative;
+    max-width: 100vw;
+    height: 40vh;
+  }
+
+  .iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50vh;
+    height: 100%;
+    padding: 0;
   }
 }
 
@@ -850,11 +864,11 @@ main a:visited {
     padding: 2em 20% 1.5em 20%;
   }
 
-  .categoryequipment, .categoryingre, .categorynotes, .categorydirections {
+  .categoryequipment, .categoryingre, .categorynotes, .categorydirections, .categorysources {
     font-size: 3em;
   }
 
-  .categoryingre, .categorydirections, .categorynotes {
+  .categoryingre, .categorydirections, .categorynotes, .categorysources {
     padding: 2em 20%;
   }
 
@@ -874,6 +888,10 @@ main a:visited {
   padding: 0 20%;
   }
 
+  a {
+    padding: 0 12%;
+  }
+
   .zoom p {
     padding: 0 19%;
   }
@@ -886,8 +904,17 @@ main a:visited {
   /*VIDEO*/
   .iframe-container{
     position: relative;
+    max-width: 100vw;
+    height: 60vh;
+  }
+
+  .iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50vh;
+    height: 100%;
+    padding: 0;
   }
 }
 
@@ -1115,14 +1142,6 @@ main a:visited {
 
   .categoryingre {
     padding: 8% 20% 5% 20%;
-  }
-
-  .categorydirections {
-    border-top: none;
-  }
-
-  .categoryingre {
-    border-top: 2px solid #0d3629;
   }
 
   h5 {
