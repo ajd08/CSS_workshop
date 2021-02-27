@@ -1,0 +1,80 @@
+html,
+body {
+    max-width: 100%;
+    margin: 0% !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: $primary-background-color;
+
+    color: $text-color;
+    font-family: $font-stack;
+}
+
+hr.horizontal {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid $secondary-background-color;
+    margin: 1em 0;
+    padding: 0;
+    width: 100%;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4em;
+    padding: 0 5% 0 5%;
+}
+
+h1 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vh;
+    letter-spacing: 0.05em;
+    width: 100%;
+}
+
+h2 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vh;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+    width: 100%;
+}
+
+h5 {
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: bold;
+    color: $text-color-secondary;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0.5em 0;
+    letter-spacing: 0.05em;
+}
+
+span.yellow {
+    color: $text-color-important;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+    body {
+        font-size: 1.2em;
+    }
+    h5 {
+        font-size: 1.3em;
+    }
+}

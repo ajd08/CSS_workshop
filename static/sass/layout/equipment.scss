@@ -1,0 +1,42 @@
+.equipment {
+    font-family: $font-stack;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    font-size: 1em;
+    padding: 1em;
+}
+
+/*SCROLLBAR*/
+.item-scroll-wrapper {
+    height: 50%;
+    display: flex;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $primary-background-color; /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $secondary-background-color; /* color of the scroll thumb */
+        border-radius: 20px; /* roundness of the scroll thumb */
+        border: 3px solid $secondary-background-color; /* creates padding around scroll thumb */
+    }
+    .item {
+        min-width: 20%;
+        height: 20%;
+        line-height: 1.2em;
+        text-align: center;
+        margin-right: 10px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            padding: 10% 0;
+        }
+    }
+}
+
