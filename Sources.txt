@@ -1,4 +1,14 @@
+Recipe by Pick Up Limes 
+https://www.pickuplimes.com/single-post/2020/06/26/BBQ-Cauliflower-Pizza
+
+CSS Scrollbars
 https://www.digitalocean.com/community/tutorials/css-scrollbars
 
-CLAMP CALCULATOR 
-https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/#for-those-who-dont-mind-that-edge-case
+CSS Grid Templates Tutorial
+https://www.youtube.com/watch?v=qTGbWfEEnKI&list=PLzHEoyoF1BZxd0pl7T9V5dDCNT_AB3jWL&index=12&t=563s
+
+Menu Hover Line Effect 
+https://codepen.io/jstn/pen/zuDst
+
+HTML Links Color
+https://www.w3schools.com/html/html_links.asp
